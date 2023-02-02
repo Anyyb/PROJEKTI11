@@ -1,25 +1,30 @@
 @charset "utf-8";
+* {
+  box-sizing: border-box;
+}
 
 body {
-  background-color: rgb(255, 255, 255);
+  margin: 0;
   font-family: Arial;
-  padding: 10px;
+  background-color: rgb(211, 208, 208);
 }
+
+/* Style the header */
 .header {
+  background-color: #f1f1f1;
   padding: 30px;
   text-align: center;
-  background: white;
-}
-.header h1 {
-  font-size: 50px;
 }
 
-.valikko {
+/* Style the top navigation bar */
+.topnav {
   overflow: hidden;
   background-color: rgb(34, 69, 163);
+  box-shadow: 5px 5px 5px 5px #888888;
 }
 
-.valikko a {
+/* Style the topnav links */
+.topnav a {
   float: right;
   display: block;
   color: #f2f2f2;
@@ -28,15 +33,59 @@ body {
   text-decoration: none;
 }
 
-.valikko a:hover {
+/* Change color on hover */
+.topnav a:hover {
   background-color: rgb(51, 99, 233);
   color: rgb(255, 255, 255);
 }
 
-
-h1 {
-  color: rgb(34, 69, 163);
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 50px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  box-shadow: 5px 5px 5px 5px #888888;
+  
 }
-p {
-  color: rgb(0, 0, 0);
+
+/* Left and right column */
+.column.left {
+  width: 25%;
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.column.right {
+  width: 30%;
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
+  float: right;
+}
+/* Middle column */
+.column.middle {
+  width: 40%;
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: #ffffff;
+  
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+   .column.right,.column.left,.column.middle {
+    width: 100%;
+  }
 }
