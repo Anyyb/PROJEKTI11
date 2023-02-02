@@ -6,7 +6,7 @@
 body {
   margin: 0;
   font-family: Arial;
-  background-color: rgb(211, 208, 208);
+  background-color: rgb(255, 255, 255);
 }
 
 /* Style the header */
@@ -20,14 +20,14 @@ body {
 .topnav {
   overflow: hidden;
   background-color: rgb(34, 69, 163);
-  box-shadow: 5px 5px 5px 5px #888888;
+  box-shadow: 1px 1px 1px 1px #888888;
 }
 
 /* Style the topnav links */
 .topnav a {
   float: right;
   display: block;
-  color: #f2f2f2;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -43,35 +43,50 @@ body {
 .column {
   float: left;
   padding: 50px;
-  background-color: #ffffff;
   margin-top: 20px;
-  box-shadow: 5px 5px 5px 5px #888888;
+  background-color: lightgray;
+  /*box-shadow: 1px 1px 1px 1px #888888;*/
   
 }
 
 /* Left and right column */
 .column.left {
   width: 25%;
-  background-color: #ffffff;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 10px;
-}
-.column.right {
-  width: 30%;
-  background-color: #ffffff;
+  background-color: lightgray;
   margin-top: 20px;
   margin-left: 10px;
-  margin-right: 20px;
+  margin-right: 10px;
+  border-style: dotted;
+  border-color: rgb(136, 136, 136);
+  /*box-shadow: 1px 1px 1px 1px #888888;*/
+}
+.column.left img{
+  width:400px; 
+  height:330px;
+  float: left;
+} 
+.column.right {
+  width: 30%;
+  background-color: lightgray;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   float: right;
+  text-align: center;
+  border-style: dotted;
+  border-color: rgb(136, 136, 136);
+ /* box-shadow: 1px 1px 1px 1px #888888;*/
 }
 /* Middle column */
 .column.middle {
-  width: 40%;
-  background-color: #ffffff;
+  width: 42%;
+  background-color: lightgray;
   margin-top: 20px;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 5px;
+  border-style: dotted;
+  border-color: rgb(136, 136, 136);
+  /*box-shadow: 1px 1px 1px 1px #888888;*/
 }
 
 /* Clear floats after the columns */
@@ -79,7 +94,7 @@ body {
   content: "";
   display: table;
   clear: both;
-  background-color: #ffffff;
+ 
   
 }
 
