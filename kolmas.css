@@ -1,14 +1,14 @@
 @charset "utf-8";
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: #f9f9f9;
   font-family: Arial;
   padding: 10px;
 }
 .header {
   padding: 30px;
   text-align: center;
-  background: white;
+  background: #f9f9f9;
 }
 .header h1 {
   font-size: 50px;
@@ -16,7 +16,7 @@ body {
 
 .valikko {
   overflow: hidden;
-  background-color: rgb(34, 69, 163);
+  background-color: #425c45;
 }
 
 .valikko a {
@@ -29,8 +29,8 @@ body {
 }
 
 .valikko a:hover {
-  background-color: rgb(51, 99, 233);
-  color: rgb(255, 255, 255);
+  background-color: #f9f9f9;
+  color: #425c4;
 }
 
 
