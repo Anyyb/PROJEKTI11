@@ -22,14 +22,14 @@ body {
 .topnav {
   overflow: hidden;
   background-color: rgb(34, 69, 163);
-  box-shadow: 1px 1px 1px 1px #888888;
+  box-shadow: 1px 1px 1px 1px #425c45;
 }
 
 /* Style the topnav links */
 .topnav a {
   float: right;
   display: block;
-  color: #ffffff;
+  color:#faf0e6;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -37,8 +37,8 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: rgb(51, 99, 233);
-  color: rgb(255, 255, 255);
+  background-color: #f9f9f9;
+  color: #425c45;
 }
 .column {
   float: left;
@@ -62,18 +62,19 @@ body {
  
 }
 .img {
-  width: 90%;
+  width: 40%;
   padding: 20px;
   margin-left: 20px;
 }
 .keski {
+  float: left;
   width: 140%;
-  background-color: lightgray;
+  background-color:  #b6c7a7;
   padding: 30px;
-  margin-left: 40%;
   margin-top: 30px;
+  margin-left: 40%;
   border-style: dotted;
-  border-color: rgb(136, 136, 136);
+  overflow: hidden;
 }
 .row:after {
   content: "";
@@ -84,7 +85,7 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background:  #b6c7a7;
   margin-top: 20px;
 }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
