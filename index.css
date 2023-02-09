@@ -53,6 +53,7 @@ body {
 
 /* Right column */
 .oikea {
+  text-align: center;
   margin-top: 30px;
   float: right;
   width: 25%;
@@ -61,14 +62,15 @@ body {
  
 }
 .img {
-  width: 100%;
+  width: 90%;
   padding: 20px;
+  margin-left: 20px;
 }
 .keski {
   width: 140%;
   background-color: lightgray;
   padding: 30px;
-  margin-left: 35%;
+  margin-left: 40%;
   margin-top: 30px;
   border-style: dotted;
   border-color: rgb(136, 136, 136);
