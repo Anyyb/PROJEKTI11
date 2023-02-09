@@ -48,3 +48,14 @@ article {
   padding-left: 10px;
   padding-right: 10px;
 }
+#padelkuva {
+  float: right;
+  width: 300px;
+  height: auto;
+  
+}
+#frisbeeg {
+  float: right;
+  width: 300px;
+  height: auto;
+}
