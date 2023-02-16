@@ -48,13 +48,18 @@ article {
   padding-left: 10px;
   padding-right: 10px;
 }
-#padelkuva {
+#Padelkuva {
   float: right;
   width: 300px;
   height: auto;
   
 }
-#frisbeeg {
+#Frisbeeg {
+  float: right;
+  width: 300px;
+  height: auto;
+}
+#Tae {
   float: right;
   width: 300px;
   height: auto;
