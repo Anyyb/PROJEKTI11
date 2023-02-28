@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="kolmas.css" />
-
-
 
 <title>Hobbies Magazine - Ota yhteyttä</title>
 <link rel="icon" type="image/x-icon" href="logotransparent.png">
@@ -14,7 +13,7 @@
 <h3>Suomen suurin harrastuksista uutisoiva e-lehti</h3>
 </div>
 
-<div class="valikko">
+<div class="topnav">
     <a href="kolmas.html">Ota yhteyttä</a>
     <a href="harrastukset.html">Harrastukset</a>
     <a href="eka.html">Uutiset</a>
@@ -22,26 +21,15 @@
     <a href="index.html" style="float:left">Etusivu</a>
   </div>
 <br>
-<h3>Voit antaa meille palautetta!</h3>
 
-<section>
-<article>
-<h4>Yhteystiedot:</h4>
-<p>Vastaava päätoimittaja: Maija Mehiläinen <br>
-paatoimitus@hobbiesmagazine.fi </p>
-<p>Toimittaja/Uutisvihjeet: Sinikka Sammal <br> 
-  Info@hobbiesmagazine.fi </p>
-<p>Toimittaja/Asiakaspalvelu: Heidi Hämäläinen <br>
-  asiakaspalvelu@hobbiesmagazine.fi puh. +358 000 0000</p>
-<p>IT-henkilö: Marja Mäkäräinen <br>
-it-tuki@hobbiesmagazine.fi</p>
-<p>Mainostoiminta/Yhteistyö: Paula Pääskynen <br>
-  mainos@hobbiesmagazine.fi</p>
+<div class="container">
+  <div style="text-align:left">
+    <h2>Voit antaa meille palautetta!</h2>
+  </div>
 
 
-</article>
-
-  <div class="container">
+<div class="row">
+  <div class="column left">
     <form action="action_page.php">
   
       <label for="fname">Etunimi</label>
@@ -59,9 +47,25 @@ it-tuki@hobbiesmagazine.fi</p>
       <textarea id="subject" name="subject" placeholder="Kirjoita tähän..." style="height:200px"></textarea>
   
       <input type="submit" value="Lähetä">
-  
     </form>
   </div> 
-</section>
+
+  <div class="column right">
+    <article>
+    <h4>Yhteystiedot:</h4>
+    <p>Vastaava päätoimittaja: Maija Mehiläinen <br>
+    paatoimitus@hobbiesmagazine.fi </p>
+    <p>Toimittaja/Uutisvihjeet: Sinikka Sammal <br> 
+      Info@hobbiesmagazine.fi </p>
+    <p>Toimittaja/Asiakaspalvelu: Heidi Hämäläinen <br>
+      asiakaspalvelu@hobbiesmagazine.fi puh. +358 000 0000</p>
+    <p>IT-henkilö: Marja Mäkäräinen <br>
+    it-tuki@hobbiesmagazine.fi</p>
+    <p>Mainostoiminta/Yhteistyö: Paula Pääskynen <br>
+      mainos@hobbiesmagazine.fi</p>
+    </article>
+  </div>
+</div> 
+    
 </body>
 </html>

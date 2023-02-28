@@ -1,25 +1,26 @@
 @charset "utf-8";
 
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #f9f9f9;
   font-family: Arial;
   padding: 10px;
+  margin: 0;
 }
 .header {
   padding: 30px;
   text-align: center;
   background: #f9f9f9;
 }
-.header h1 {
-  font-size: 50px;
-}
 
-.valikko {
+.topnav {
   overflow: hidden;
   background-color: #425c45;
 }
 
-.valikko a {
+.topnav a {
   float: right;
   display: block;
   color: #f2f2f2;
@@ -28,21 +29,20 @@ body {
   text-decoration: none;
 }
 
-.valikko a:hover {
+.topnav a:hover {
   background-color: #f9f9f9;
   color: #425c45;
 }
 
-
 h1 {
-  color: rgb(34, 69, 163);
+  color: #425c45;
 }
 p {
   color: rgb(0, 0, 0);
 }
 
  /* Style inputs with type="text", select elements and textareas */
- input[type=text], select, textarea {
+input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
   border: 1px solid #ccc; /* Gray border */
@@ -68,31 +68,40 @@ input[type=submit]:hover {
   background-color: #b6c7a7;
 }
 
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #b6c7a7;
+
+.column {
+  float: left;
+  margin-top: 6px;
   padding: 20px;
-  width: 45%;
-} 
-article {
-  float: right;
-  border-radius: 5px;
   background-color: #b6c7a7;
-  padding: 20px;
-  width: 45%;
-  text-align: center;
+  width: 48%;
+  border-radius: 4px;
+  
 }
+
+.column.right {
+  text-align: center;
+  float: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .article {
+  .column, input[type=submit] {
     width: 100%;
+    margin-top: 0;
   }
 }
 
 /* Responsive layout - when the screen is less than 500px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
-  .valikko a {
+  .topnav a {
     float: none;
     width: 100%;
   }

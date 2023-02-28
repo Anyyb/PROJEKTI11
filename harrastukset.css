@@ -48,6 +48,7 @@ body {
 .column {
   float: left;
   padding: 20px;
+  border-radius: 4px;
 }
 
 /* Left and right column */
@@ -64,6 +65,7 @@ body {
   margin-top: 40px;
   border-style: dotted;
   background-color: #b6c7a7;
+  border-width: 2px;
 }
 
 .mainosimg {
