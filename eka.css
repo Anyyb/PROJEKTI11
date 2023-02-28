@@ -1,72 +1,95 @@
 @charset "utf-8";
+* {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
 
 body {
-  background-color: #f9f9f9;
-  font-family: sans-serif;
+  font-family: Arial;
   padding: 10px;
-}
-.header {
-  text-align: center;
-  background: #f9f9f9;
-  padding: 30px;
-}
-.header h1 {
-  font-size: 20px;
+  background-color: #f9f9f9;
+  margin: 0;
 }
 
-.valikko {
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
   overflow: hidden;
   background-color: #425c45;
 }
 
-.valikko a {
+/* Style the topnav links */
+.topnav a {
   float: right;
   display: block;
-  color: #faf0e6;
+  color:#faf0e6;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-.valikko a:hover {
+/* Change color on hover */
+.topnav a:hover {
   background-color: #f9f9f9;
   color: #425c45;
 }
-
-article {
-    background-color: #b6c7a7;
-    border-style: dotted;
-    border-width: 2px;
-    width:65%;
-    padding-left: 10px;
-    padding-right: 10px;
-    float: left;
-}
-
-
-
-* {
-  box-sizing: border-box;
-}
-
-/* Create two equal columns that floats next to each other */
+/* Create three unequal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  padding: 20px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+  float: right;
+  text-align:center;
+  
+}
+
+/* Middle column */
+.column.middle {
+  width: 70%;
+  margin-top: 40px;
+  border-style: dotted;
+  background-color: #b6c7a7;
+}
+
+.mainosimg {
+  width: 100%;
+  padding: 20px;
 }
 
 /* Clear floats after the columns */
-.row:after {
+.artikkelit:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Responsive layout - when the screen is less than 500px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .topnav a {
+    float: none;
     width: 100%;
   }
 }
